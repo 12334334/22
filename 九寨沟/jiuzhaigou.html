@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>九寨沟</title>
+    <base target="_blank" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+<body>
+	<!-- Swiper -->
+	<section class="pc-banner">
+	    <div class="swiper-container">
+	        <div class="swiper-wrapper">
+            
+
+	            <div class="swiper-slide swiper-slide-center none-effect">
+	
+            	
+                    <a href="#"><img src="1.jpg" ></a>
+	            </div>
+	            <div class="swiper-slide"><a href="#"><img src="2.jpg" ></a></div>
+	            <div class="swiper-slide"><a href="#"><img src="3.jpg" ></a></div>
+ <div class="swiper-slide"><a href="#"><img src="4.jpg" ></a></div>
+	        <div class="swiper-slide"><a href="#"><img src="5.jpg" ></a></div>
+             <div class="swiper-slide"><a href="#"><img src="6.jpg" ></a></div>
+             <div class="swiper-slide"><a href="#"><img src="7.jpg" ></a></div>
+             <div class="swiper-slide"><a href="#"><img src="9.jpg" ></a></div>
+             <div class="swiper-slide"><a href="#"><img src="11.jpg" ></a></div>
+             <div class="swiper-slide"><a href="#"><img src="13.jpg" ></a></div>
+             <div class="swiper-slide"><a href="#"><img src="15.jpg" ></a></div>
+          </div>
+	    </div>
+
+	    <div class="swiper-pagination"></div>
+		<div class="button">
+	    <div class="swiper-button-prev"></div>
+	    <div class="swiper-button-next"></div></div>
+	</section>
+	<div class="describe"><p>九寨沟</p>
+    “九寨归来不看水”，是对九寨沟景色真实的诠释。泉、瀑、河、滩108个海子，构成一个个五彩斑斓的瑶池玉盆。长海、剑岩、诺日朗、树正、扎如、黑海六大景观，呈“Y”字形分布。翠海、叠瀑、彩林、雪峰、藏情、蓝冰，被称为“六绝”。神奇的九寨，被世人誉为“童话世界”，号称“水景之王”。
+
+    </div>
+    <a href="../index.html" target="_self">返回首页</a>
+
+    	
+
+    
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+		window.onload = function() {
+	    var swiper = new Swiper('.swiper-container',{
+			autoplay:3000,	//是否自动滚动
+			speed:1000,		//滚动速速
+			autoplayDisableOnInteraction : false,
+			loop:true,
+			centeredSlides : true,
+			slidesPerView:2,//当前选中
+	        pagination : '.swiper-pagination',
+			paginationClickable:true,
+			prevButton:'.swiper-button-prev',//左右切换
+	        nextButton:'.swiper-button-next',//左右切换
+			onInit:function(swiper){		 //当前选中 状态
+					swiper.slides[2].className="swiper-slide swiper-slide-active";//第一次打开不要动画
+				},
+	        	breakpoints: { 
+	                668: {
+	                    slidesPerView: 1,
+	                }
+	            }
+			});
+		}
+    </script>
+</body>
+</html>
